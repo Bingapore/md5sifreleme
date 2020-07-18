@@ -27,3 +27,6 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 2) Shiva Prasad Reddy Bitla (sxb180066)
 3) Akshay Maganti ( axm180074 )
 
+## Further help
+
+To get more help on the Angular CLI use `ng help` or go check out 
