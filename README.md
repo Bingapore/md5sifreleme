@@ -24,4 +24,6 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 ## Group Members
 1) Ravi Teja Talari (RXT170012)
-2) Sh
+2) Shiva Prasad Reddy Bitla (sxb180066)
+3) Akshay Maganti ( axm180074 )
+
