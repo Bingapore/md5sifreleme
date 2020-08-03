@@ -20,4 +20,5 @@ exports.config = {
     print: function() {}
   },
   onPrepare() {
-    require(
+    require('ts-node').register({
+      project: require('path').join(__dirname, '.
