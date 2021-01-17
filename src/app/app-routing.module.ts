@@ -1,2 +1,3 @@
 import { NgModule } from '@angular/core';
-impor
+import { Routes, RouterModule } from '@angular/router';
+import { LandingPageCompone
