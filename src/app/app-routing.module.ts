@@ -4,4 +4,5 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
 import { TestingPartComponent } from './testing-part/testing-part.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { RegistrationPageComponent } from './registration-page/registration-page.component';
-import { BuyBitCoinsComponent } from './buy-bit-coins/buy-bit-coin
+import { BuyBitCoinsComponent } from './buy-bit-coins/buy-bit-coins.component';
+import { SellBitCoinsComponent } from './sell-bit-coins/sell-bit-co
