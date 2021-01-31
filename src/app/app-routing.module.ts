@@ -5,4 +5,5 @@ import { TestingPartComponent } from './testing-part/testing-part.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { RegistrationPageComponent } from './registration-page/registration-page.component';
 import { BuyBitCoinsComponent } from './buy-bit-coins/buy-bit-coins.component';
-import { SellBitCoinsComponent } from './sell-bit-coins/sell-bit-co
+import { SellBitCoinsComponent } from './sell-bit-coins/sell-bit-coins.component';
+import { HomepageTraderComponent } from './homepage-trader/homep
