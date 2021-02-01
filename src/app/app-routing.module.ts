@@ -10,4 +10,5 @@ import { HomepageTraderComponent } from './homepage-trader/homepage-trader.compo
 import { ManagerModuleComponent } from './manager-module/manager-module.component';
 
 const routes: Routes = [
-  {path:'login
+  {path:'login' , component: LandingPageComponent},
+  {path:'homepage', component: HomePageComponen
