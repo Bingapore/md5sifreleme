@@ -7,4 +7,7 @@ import { RegistrationPageComponent } from './registration-page/registration-page
 import { BuyBitCoinsComponent } from './buy-bit-coins/buy-bit-coins.component';
 import { SellBitCoinsComponent } from './sell-bit-coins/sell-bit-coins.component';
 import { HomepageTraderComponent } from './homepage-trader/homepage-trader.component';
-import { ManagerModuleComponent } from './manager-modu
+import { ManagerModuleComponent } from './manager-module/manager-module.component';
+
+const routes: Routes = [
+  {path:'login
