@@ -11,4 +11,6 @@ import { ManagerModuleComponent } from './manager-module/manager-module.componen
 
 const routes: Routes = [
   {path:'login' , component: LandingPageComponent},
-  {path:'homepage', component: HomePageComponen
+  {path:'homepage', component: HomePageComponent},
+  {path:'register', component: RegistrationPageComponent},
+  {pat
