@@ -13,4 +13,5 @@ const routes: Routes = [
   {path:'login' , component: LandingPageComponent},
   {path:'homepage', component: HomePageComponent},
   {path:'register', component: RegistrationPageComponent},
-  {pat
+  {path :'testing' , component : TestingPartComponent},
+  {path :'buyBit' 
