@@ -14,4 +14,5 @@ const routes: Routes = [
   {path:'homepage', component: HomePageComponent},
   {path:'register', component: RegistrationPageComponent},
   {path :'testing' , component : TestingPartComponent},
-  {path :'buyBit' 
+  {path :'buyBit' , component : BuyBitCoinsComponent},
+  {path :'sellBit' , component : SellBit
