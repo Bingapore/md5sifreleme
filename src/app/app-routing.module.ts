@@ -17,4 +17,8 @@ const routes: Routes = [
   {path :'buyBit' , component : BuyBitCoinsComponent},
   {path :'sellBit' , component : SellBitCoinsComponent},
   {path :'homepageTrader' , component : HomepageTraderComponent},
-  {path : 'managerHomePage', component : Man
+  {path : 'managerHomePage', component : ManagerModuleComponent}
+];
+
+@NgModule({
+  imports: [RouterModule.forRoo
