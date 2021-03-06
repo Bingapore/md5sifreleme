@@ -4,4 +4,9 @@
   padding: 30px;
 }
 .main-container-text{
-  font-family:
+  font-family: sans-serif;
+  font-style: italic;
+}
+
+.header-links-style{
+  padding : 5px 5px 5px 5px;
