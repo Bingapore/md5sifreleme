@@ -21,4 +21,5 @@ describe('AppComponent', () => {
   });
 
   it(`should have as title 'first-web-app'`, () => {
-    const fixture = T
+    const fixture = TestBed.createComponent(AppComponent);
+    const app = fixture.debugElement.c
