@@ -26,4 +26,5 @@ describe('AppComponent', () => {
     expect(app.title).toEqual('first-web-app');
   });
 
-  i
+  it('should render title in a h1 tag', () => {
+    const fixt
