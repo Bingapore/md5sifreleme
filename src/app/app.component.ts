@@ -1,1 +1,5 @@
-import { Component, Output, EventEmitter } from
+import { Component, Output, EventEmitter } from '@angular/core';
+
+@Component({
+  selector: 'app-root',
+  templateUrl
