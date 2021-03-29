@@ -14,4 +14,6 @@ export class AppComponent {
 
   ngOnInit()
   {
-    consol
+    console.log("in app ngOnInit()")
+  }
+}
