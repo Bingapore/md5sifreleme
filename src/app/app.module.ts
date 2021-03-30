@@ -29,3 +29,20 @@ import { ManagerModuleComponent } from './manager-module/manager-module.componen
     TestingPartComponent,
     HomePageComponent,
     RegistrationPageComponent,
+    BuyBitCoinsComponent,
+    SellBitCoinsComponent,
+    HomepageTraderComponent,
+    TraderChildsComponent,
+    ClientHistoryComponent,
+    TraderChildBuyComponent,
+    ManagerModuleComponent
+  ],
+  imports: [
+    BrowserModule,
+    HttpClientModule,
+    AppRoutingModule
+  ],
+  providers: [PrimaryKeyClassService],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
