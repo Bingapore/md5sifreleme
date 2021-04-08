@@ -14,4 +14,6 @@
   How would you pay commission?<br/><br/>
 
   <input type="radio" value="BitCoin" name="CommType" (change) = radioCommType($event)> BitCoin
-  <p *ngIf="fiatRadioFlag"><input  type="radio" value="FiatCash" 
+  <p *ngIf="fiatRadioFlag"><input  type="radio" value="FiatCash" name="CommType" (change) = radioCommType($event)> FiatCash </p>
+  <br/><br/>
+  Commi
