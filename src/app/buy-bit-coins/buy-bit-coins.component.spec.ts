@@ -19,4 +19,7 @@ describe('BuyBitCoinsComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should creat
+  it('should create', () => {
+    expect(component).toBeTruthy();
+  });
+});
