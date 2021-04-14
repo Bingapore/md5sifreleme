@@ -7,4 +7,5 @@ describe('BuyBitCoinsComponent', () => {
   let fixture: ComponentFixture<BuyBitCoinsComponent>;
 
   beforeEach(async(() => {
-    
+    TestBed.configureTestingModule({
+      declarations: [ BuyBitCoinsComponent
