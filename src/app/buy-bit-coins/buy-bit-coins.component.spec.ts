@@ -14,4 +14,5 @@ describe('BuyBitCoinsComponent', () => {
   }));
 
   beforeEach(() => {
-    fixture = TestB
+    fixture = TestBed.createComponent(BuyBitCoinsComponent);
+    component = fixture.c
