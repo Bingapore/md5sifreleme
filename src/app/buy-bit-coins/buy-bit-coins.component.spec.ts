@@ -4,4 +4,7 @@ import { BuyBitCoinsComponent } from './buy-bit-coins.component';
 
 describe('BuyBitCoinsComponent', () => {
   let component: BuyBitCoinsComponent;
-  let fixt
+  let fixture: ComponentFixture<BuyBitCoinsComponent>;
+
+  beforeEach(async(() => {
+    
