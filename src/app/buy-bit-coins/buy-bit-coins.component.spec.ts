@@ -8,4 +8,10 @@ describe('BuyBitCoinsComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ BuyBitCoinsComponent
+      declarations: [ BuyBitCoinsComponent ]
+    })
+    .compileComponents();
+  }));
+
+  beforeEach(() => {
+    fixture = TestB
