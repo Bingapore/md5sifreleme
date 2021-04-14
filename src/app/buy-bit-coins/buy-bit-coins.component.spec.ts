@@ -15,4 +15,8 @@ describe('BuyBitCoinsComponent', () => {
 
   beforeEach(() => {
     fixture = TestBed.createComponent(BuyBitCoinsComponent);
-    component = fixture.c
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+  });
+
+  it('should creat
