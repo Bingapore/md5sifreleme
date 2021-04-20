@@ -179,3 +179,73 @@ export class BuyBitCoinsComponent implements OnInit {
 
 
               if(data.result == false)
+              {
+                this.errorMessageFromResponse = data.errorMessage;
+                this.errorFlag = true;
+              }
+              else if(data.result == true)
+              {
+                this.bitCoins = data.clientBitCoins;
+                this.fiatCurrency = data.clientFiatCurrency;
+                this.errorFlag = false;
+              }
+
+            });
+
+          }
+          else if(data.result == false)
+          {
+            this.errorMessageFromResponse = data.errorMessage;
+            this.errorFlag = true;
+          }
+
+          } ,
+          (err:any) => {
+              console.log("err : "+err);
+          });
+
+    }
+    else if(this.radioSelected.length > 0 && this.radioSelected == "FiatCash" && this.bDesired > 0 && !isNaN( this.bDesired ))
+    {
+      //code for FiatCash
+      console.log("radio : "+this.radioSelected);
+      let obs111 = this.http.post('http://localhost:8080/restproject/webapi/products/newClientBuyTransaction/',
+      {"clientId":this.userPrimaryKey,
+        "transType":"buy",
+        "transVal":this.bDesired,
+        "transCommission":this.calCommissionFiat,
+        "transCommissionType":this.radioSelected,
+        "transStatus":"new",
+        "bitCoinValue":this.bValue
+      }
+      );
+
+
+      obs111.subscribe((data:any) => {
+        console.log("result : "+data.result);
+        if(data.result == true)
+        {
+
+          let obsNew = this.http.get('http://localhost:8080/restproject/webapi/products/balance/'+this.userPrimaryKey);
+
+          obsNew.subscribe((data:any) =>
+          {
+
+            console.log("accounts response fiat : "+data.errorMessage);
+
+
+            if(data.result == false)
+            {
+              this.errorMessageFromResponse = data.errorMessage;
+              this.errorFlag = true;
+            }
+            else if(data.result == true)
+            {
+              this.bitCoins = data.clientBitCoins;
+              this.fiatCurrency = data.clientFiatCurrency;
+              this.errorFlag = false;
+            }
+
+          });
+
+        }
