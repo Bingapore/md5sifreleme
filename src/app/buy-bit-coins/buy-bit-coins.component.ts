@@ -249,3 +249,15 @@ export class BuyBitCoinsComponent implements OnInit {
           });
 
         }
+        } ,
+        (err:any) => {
+            console.log("err : "+err);
+        });
+    }
+    else
+    {
+      this.errorFlag = true;
+      this.errorMessageFromResponse = "select Bitcoin or FiatCurrency";
+    }
+  }
+}
