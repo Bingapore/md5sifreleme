@@ -6,4 +6,6 @@
   color: pink;
   border: 5px solid green;
   padding: 5px;
-  
+  display: inline-block;
+  text-align: center;
+}
