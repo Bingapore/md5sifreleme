@@ -2,4 +2,8 @@
 {
   width: 100px;
   height: 100px;
-  background-color
+  background-color: rgb(50,50,50);
+  color: pink;
+  border: 5px solid green;
+  padding: 5px;
+  
