@@ -9,4 +9,9 @@ describe('ChildNamesComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [ ChildNamesComponent ]
-  
+    })
+    .compileComponents();
+  }));
+
+  beforeEach(() => {
+    fixture = TestBe
