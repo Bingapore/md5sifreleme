@@ -14,4 +14,5 @@ describe('ChildNamesComponent', () => {
   }));
 
   beforeEach(() => {
-    fixture = TestBe
+    fixture = TestBed.createComponent(ChildNamesComponent);
+    component = fixture.compon
