@@ -4,4 +4,7 @@ import { ChildNamesComponent } from './child-names.component';
 
 describe('ChildNamesComponent', () => {
   let component: ChildNamesComponent;
-  let fixture: Compone
+  let fixture: ComponentFixture<ChildNamesComponent>;
+
+  beforeEach(async(() => {
+    TestBed.configur
