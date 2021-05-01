@@ -15,4 +15,8 @@ describe('ChildNamesComponent', () => {
 
   beforeEach(() => {
     fixture = TestBed.createComponent(ChildNamesComponent);
-    component = fixture.compon
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+  });
+
+  it('should create', () =>
