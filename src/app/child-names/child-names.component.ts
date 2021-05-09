@@ -5,4 +5,6 @@ import { Component, OnInit, Input,Output,EventEmitter } from '@angular/core';
   templateUrl: './child-names.component.html',
   styleUrls: ['./child-names.component.css']
 })
-export class ChildNamesComponent implement
+export class ChildNamesComponent implements OnInit {
+  @Input() names:string;
+  @Output() childEmitter = new
