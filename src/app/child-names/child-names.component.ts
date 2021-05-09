@@ -7,4 +7,10 @@ import { Component, OnInit, Input,Output,EventEmitter } from '@angular/core';
 })
 export class ChildNamesComponent implements OnInit {
   @Input() names:string;
-  @Output() childEmitter = new
+  @Output() childEmitter = new EventEmitter<string>();
+  constructor() { }
+
+  ngOnInit() {
+  }
+
+  sendToParent(nam
