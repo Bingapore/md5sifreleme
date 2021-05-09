@@ -13,4 +13,6 @@ export class ChildNamesComponent implements OnInit {
   ngOnInit() {
   }
 
-  sendToParent(nam
+  sendToParent(name ){
+    // this.eventFromChildNames.emit(name);
+    console.log("clicked : "+n
