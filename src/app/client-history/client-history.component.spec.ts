@@ -6,4 +6,6 @@ describe('ClientHistoryComponent', () => {
   let component: ClientHistoryComponent;
   let fixture: ComponentFixture<ClientHistoryComponent>;
 
-  
+  beforeEach(async(() => {
+    TestBed.configureTestingModule({
+      de
