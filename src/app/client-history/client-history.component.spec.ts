@@ -8,4 +8,6 @@ describe('ClientHistoryComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      de
+      declarations: [ ClientHistoryComponent ]
+    })
+    .compileComponen
