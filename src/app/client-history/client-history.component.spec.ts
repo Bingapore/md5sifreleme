@@ -15,4 +15,9 @@ describe('ClientHistoryComponent', () => {
 
   beforeEach(() => {
     fixture = TestBed.createComponent(ClientHistoryComponent);
-    component = fixture.componentInstan
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+  });
+
+  it('should create', () => {
+    ex
