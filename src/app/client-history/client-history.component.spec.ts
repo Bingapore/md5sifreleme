@@ -14,4 +14,5 @@ describe('ClientHistoryComponent', () => {
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(C
+    fixture = TestBed.createComponent(ClientHistoryComponent);
+    component = fixture.componentInstan
