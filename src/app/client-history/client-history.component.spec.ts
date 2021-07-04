@@ -10,4 +10,8 @@ describe('ClientHistoryComponent', () => {
     TestBed.configureTestingModule({
       declarations: [ ClientHistoryComponent ]
     })
-    .compileComponen
+    .compileComponents();
+  }));
+
+  beforeEach(() => {
+    fixture = TestBed.createComponent(C
