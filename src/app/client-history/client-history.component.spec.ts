@@ -20,4 +20,6 @@ describe('ClientHistoryComponent', () => {
   });
 
   it('should create', () => {
-    ex
+    expect(component).toBeTruthy();
+  });
+});
