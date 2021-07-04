@@ -1,1 +1,2 @@
-import { Component, OnInit, Input 
+import { Component, OnInit, Input } from '@angular/core';
+import { PrimaryKeyClassService } from '../prim
