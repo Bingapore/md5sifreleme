@@ -4,4 +4,6 @@ import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-clie
+  selector: 'app-client-history',
+  templateUrl: './client-history.component.html',
+  style
