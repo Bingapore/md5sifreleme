@@ -12,3 +12,7 @@ export class ClientHistoryComponent implements OnInit {
   @Input() transId:number;
 
   errorFlag:boolean = false;
+  errorMessageFromResponse:string = "";
+
+  clientId:string = "";
+  transType:
