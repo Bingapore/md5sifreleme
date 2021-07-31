@@ -8,4 +8,7 @@ import { Router } from '@angular/router';
   templateUrl: './client-history.component.html',
   styleUrls: ['./client-history.component.css']
 })
-export class ClientHistoryComponent im
+export class ClientHistoryComponent implements OnInit {
+  @Input() transId:number;
+
+  errorFlag:boolean = false;
