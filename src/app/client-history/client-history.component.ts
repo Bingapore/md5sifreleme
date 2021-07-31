@@ -6,4 +6,6 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-client-history',
   templateUrl: './client-history.component.html',
-  style
+  styleUrls: ['./client-history.component.css']
+})
+export class ClientHistoryComponent im
