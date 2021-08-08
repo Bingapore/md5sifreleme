@@ -15,4 +15,8 @@ export class ClientHistoryComponent implements OnInit {
   errorMessageFromResponse:string = "";
 
   clientId:string = "";
-  transType:
+  transType:string = "";
+  transVal:number;
+  transCommission:number;
+  transCommissionType:string = "";
+  
