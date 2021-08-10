@@ -19,4 +19,7 @@ export class ClientHistoryComponent implements OnInit {
   transVal:number;
   transCommission:number;
   transCommissionType:string = "";
-  
+  transStatus:string = "";
+  bitCoinValue:number;
+
+  constructor(private http: HttpClie
