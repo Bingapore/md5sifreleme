@@ -22,4 +22,10 @@ export class ClientHistoryComponent implements OnInit {
   transStatus:string = "";
   bitCoinValue:number;
 
-  constructor(private http: HttpClient , private router: Router , private primaryKeyService: PrimaryKeyClassS
+  constructor(private http: HttpClient , private router: Router , private primaryKeyService: PrimaryKeyClassService) { }
+
+  ngOnInit() {
+    this.getTheTransactionInfo();
+  }
+
+  get
