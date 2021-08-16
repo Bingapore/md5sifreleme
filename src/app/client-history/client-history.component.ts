@@ -28,4 +28,6 @@ export class ClientHistoryComponent implements OnInit {
     this.getTheTransactionInfo();
   }
 
-  get
+  getTheTransactionInfo()
+  {
+    let obs = this.http.get('http://localhost:8080/r
