@@ -30,4 +30,6 @@ export class ClientHistoryComponent implements OnInit {
 
   getTheTransactionInfo()
   {
-    let obs = this.http.get('http://localhost:8080/r
+    let obs = this.http.get('http://localhost:8080/restproject/webapi/products/clientTransInfo/'+this.transId);
+
+    obs.subscri
