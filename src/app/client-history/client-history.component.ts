@@ -32,4 +32,9 @@ export class ClientHistoryComponent implements OnInit {
   {
     let obs = this.http.get('http://localhost:8080/restproject/webapi/products/clientTransInfo/'+this.transId);
 
-    obs.subscri
+    obs.subscribe((data:any) =>
+    {
+
+      if(data.result == false)
+      {
+        //there is an error
