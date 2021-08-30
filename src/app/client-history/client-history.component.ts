@@ -38,3 +38,5 @@ export class ClientHistoryComponent implements OnInit {
       if(data.result == false)
       {
         //there is an error
+        this.errorFlag = true;
+        this.errorMessageFromResponse = data.
