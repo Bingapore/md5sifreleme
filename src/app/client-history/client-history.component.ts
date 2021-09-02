@@ -44,4 +44,6 @@ export class ClientHistoryComponent implements OnInit {
       }
       else if(data.result == true)
       {
-        
+        //there is no error
+        this.errorFlag = false;
+        this.error
