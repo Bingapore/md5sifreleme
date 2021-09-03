@@ -53,4 +53,5 @@ export class ClientHistoryComponent implements OnInit {
         this.transVal = data.transVal ;
         this.transCommission = data.transCommission;
         this.transCommissionType = data.transCommissionType;
-        this.transStatus = data.tr
+        this.transStatus = data.transStatus;
+        this.bitCoinValue = data.bitCoinValue;
