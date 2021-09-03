@@ -52,4 +52,5 @@ export class ClientHistoryComponent implements OnInit {
         this.transType = data.transType;
         this.transVal = data.transVal ;
         this.transCommission = data.transCommission;
-        th
+        this.transCommissionType = data.transCommissionType;
+        this.transStatus = data.tr
