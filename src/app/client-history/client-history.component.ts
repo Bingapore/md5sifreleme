@@ -48,4 +48,6 @@ export class ClientHistoryComponent implements OnInit {
         this.errorFlag = false;
         this.errorMessageFromResponse = "";
 
-        this.clientId = data.clientId
+        this.clientId = data.clientId;
+        this.transType = data.transType;
+        this.tran
