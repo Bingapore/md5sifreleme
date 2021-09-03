@@ -50,4 +50,6 @@ export class ClientHistoryComponent implements OnInit {
 
         this.clientId = data.clientId;
         this.transType = data.transType;
-        this.tran
+        this.transVal = data.transVal ;
+        this.transCommission = data.transCommission;
+        th
