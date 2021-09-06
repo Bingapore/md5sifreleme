@@ -16,4 +16,8 @@
   <br/>
   <br/>
   <button (click) = "buyBitCoins()">Buy</button>
-  <button (click) = "sellBitCoi
+  <button (click) = "sellBitCoins()">sell</button>
+
+  <p *ngIf="errorFlag">{{errorMessageFromResponse}}</p>
+
+</div>
