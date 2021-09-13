@@ -40,3 +40,76 @@ export class HomePageComponent implements OnInit {
     {
 
       console.log("accounts response : "+data.errorMessage);
+
+
+      if(data.result == false)
+      {
+        this.errorMessageFromResponse = data.errorMessage;
+        this.errorFlag = true;
+      }
+      else if(data.result == true)
+      {
+        this.bitCoins = data.clientBitCoins;
+        this.fiatCurrency = data.clientFiatCurrency;
+        this.errorFlag = false;
+      }
+
+    });
+  }
+
+  onTextEnteredInInputForLoadingMoney(event:any)
+  {
+    this.amountLoaded = event.target.value;
+    this.errorMessageFromResponse = "";
+    this.errorFlag = false;
+  }
+
+  loadAmount()
+  {
+    if(this.amountLoaded > 0)
+    {
+      console.log("amt : "+this.amountLoaded);
+
+      let obs = this.http.post('http://localhost:8080/restproject/webapi/products/newClientAmountTransaction/',
+      {"clientId":this.userPrimaryKey,
+        "amount":this.amountLoaded,
+        "transStatus":"new"
+      }
+      );
+
+      obs.subscribe((data:any) =>
+      {
+        if(data.result == true)
+        {
+          //inserted
+          this.amountLoaded = 0;
+          this.errorMessageFromResponse = "Made new Payment";
+          this.errorFlag = true;
+
+        }
+        else if(data.result == false)
+        {
+          this.errorMessageFromResponse = data.errorMessage;
+          this.errorFlag = true;
+        }
+    });
+
+      //This part should go into the trader (accept/reject payment transaction)
+    //   let obs = this.http.post('http://localhost:8080/restproject/webapi/products/updateFiatAmount/',
+    //   {"clientId":this.userPrimaryKey,
+    //     "amount":this.amountLoaded
+    //   }
+    //   );
+    //
+    //   obs.subscribe((data:any) =>
+    //   {
+    //     if(data.result == true)
+    //     {
+    //       //inserted
+    //       let obsNew = this.http.get('http://localhost:8080/restproject/webapi/products/balance/'+this.userPrimaryKey);
+    //
+    //       obsNew.subscribe((data:any) =>
+    //       {
+    //
+    //         console.log("accounts response : "+data.errorMessage);
+    //
