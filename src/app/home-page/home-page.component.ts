@@ -113,3 +113,44 @@ export class HomePageComponent implements OnInit {
     //
     //         console.log("accounts response : "+data.errorMessage);
     //
+    //
+    //         if(data.result == false)
+    //         {
+    //           this.errorMessageFromResponse = data.errorMessage;
+    //           this.errorFlag = true;
+    //         }
+    //         else if(data.result == true)
+    //         {
+    //           this.bitCoins = data.clientBitCoins;
+    //           this.fiatCurrency = data.clientFiatCurrency;
+    //           this.errorFlag = false;
+    //         }
+    //
+    //       });
+    //     }
+    //     else if(data.result == false)
+    //     {
+    //       this.errorMessageFromResponse = data.errorMessage;
+    //       this.errorFlag = true;
+    //     }
+    // });
+
+    }
+    else
+    {
+      this.errorMessageFromResponse = "Please enter valid amount";
+      this.errorFlag = true;
+    }
+  }
+
+  buyBitCoins()
+  {
+    this.router.navigate(['/buyBit']);
+  }
+
+  sellBitCoins()
+  {
+    this.router.navigate(['/sellBit']);
+  }
+
+}
