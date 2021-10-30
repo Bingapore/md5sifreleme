@@ -2,4 +2,5 @@
   <p *ngIf="errorFlag" >{{errorMessage}}</p>
   Enter Username : <input type="text" placeholder="UserName" (keyup) = "findTheUserDetails($event)"/>
   <br/>
-  <button (click) = "findTheUserDetailsB
+  <button (click) = "findTheUserDetailsButtons()">Find</button><br/>
+  <button (click) = "findTheUserTransHistoryButton
