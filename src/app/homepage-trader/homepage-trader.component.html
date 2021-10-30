@@ -3,4 +3,6 @@
   Enter Username : <input type="text" placeholder="UserName" (keyup) = "findTheUserDetails($event)"/>
   <br/>
   <button (click) = "findTheUserDetailsButtons()">Find</button><br/>
-  <button (click) = "findTheUserTransHistoryButton
+  <button (click) = "findTheUserTransHistoryButtons()">History</button><br/>
+  <div *ngIf="showDetails">
+    <br/><br
