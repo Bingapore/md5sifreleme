@@ -1,3 +1,5 @@
 <div>
   <p *ngIf="errorFlag" >{{errorMessage}}</p>
-  Enter Username : <input type="text" placeholder="UserName" (keyup) = "f
+  Enter Username : <input type="text" placeholder="UserName" (keyup) = "findTheUserDetails($event)"/>
+  <br/>
+  <button (click) = "findTheUserDetailsB
