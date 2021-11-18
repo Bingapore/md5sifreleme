@@ -21,4 +21,5 @@
     <app-client-history *ngFor="let transIds of transList" [transId]="transIds"></app-client-history>
   </div>
   <h2>New BitCoin Transactions</h2>
-  <app-trader-childs *ngFor = "let pnames 
+  <app-trader-childs *ngFor = "let pnames of namesList" [parentTrader]="pnames"></app-trader-childs>
+  <h2>New FiatCurre
