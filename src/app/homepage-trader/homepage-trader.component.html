@@ -18,4 +18,7 @@
   </div>
   <div *ngIf="historyFlag">
     <h2>{{clientName}}'s BitCoins History</h2>
-    <app-client-history *ngFor="let transIds of transList" [transId]="transIds"></app-client-histo
+    <app-client-history *ngFor="let transIds of transList" [transId]="transIds"></app-client-history>
+  </div>
+  <h2>New BitCoin Transactions</h2>
+  <app-trader-childs *ngFor = "let pnames 
