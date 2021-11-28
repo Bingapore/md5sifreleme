@@ -1,3 +1,5 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-impo
+import { HomepageTraderComponent } from './homepage-trader.component';
+
+describe('Homepa
