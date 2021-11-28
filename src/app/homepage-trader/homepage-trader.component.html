@@ -23,4 +23,5 @@
   <h2>New BitCoin Transactions</h2>
   <app-trader-childs *ngFor = "let pnames of namesList" [parentTrader]="pnames"></app-trader-childs>
   <h2>New FiatCurrency Transactions</h2>
-  <app-trader-child-buy *ngFor = "let b
+  <app-trader-child-buy *ngFor = "let buyIds of buyTransList" [buyIdFromParent]="buyIds"></app-trader-child-buy>
+</div
