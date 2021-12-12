@@ -4,4 +4,7 @@ import { HomepageTraderComponent } from './homepage-trader.component';
 
 describe('HomepageTraderComponent', () => {
   let component: HomepageTraderComponent;
-  let fi
+  let fixture: ComponentFixture<HomepageTraderComponent>;
+
+  beforeEach(async(() => {
+    TestBed.config
