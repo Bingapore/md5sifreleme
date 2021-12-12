@@ -15,4 +15,8 @@ describe('HomepageTraderComponent', () => {
 
   beforeEach(() => {
     fixture = TestBed.createComponent(HomepageTraderComponent);
-    component = fixtur
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+  });
+
+  it('should create', () =
