@@ -14,4 +14,5 @@ describe('HomepageTraderComponent', () => {
   }));
 
   beforeEach(() => {
-    fixture = T
+    fixture = TestBed.createComponent(HomepageTraderComponent);
+    component = fixtur
