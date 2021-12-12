@@ -10,4 +10,8 @@ describe('HomepageTraderComponent', () => {
     TestBed.configureTestingModule({
       declarations: [ HomepageTraderComponent ]
     })
- 
+    .compileComponents();
+  }));
+
+  beforeEach(() => {
+    fixture = T
