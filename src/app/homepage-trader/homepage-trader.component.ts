@@ -74,3 +74,81 @@ export class HomepageTraderComponent implements OnInit {
   {
     this.clientName = event.target.value;
     this.showDetails = false;
+    this.historyFlag = false;
+  }
+
+  findTheUserDetailsButtons()
+  {
+    let obs = this.http.get('http://localhost:8080/restproject/webapi/products/getTheCompleteUserInfo/'+this.clientName);
+
+    obs.subscribe((data:any) =>
+    {
+
+      if(data.result == false)
+      {
+        //there is an error
+        this.errorFlag = true;
+        this.historyFlag = false;
+        this.showDetails = false;
+        this.errorMessage = data.errorMessage;
+
+      }
+      else if(data.result == true)
+      {
+        //there is no error
+        this.errorFlag = false;
+        this.showDetails = true;
+        this.historyFlag = false;
+        this.errorMessage = "";
+
+        this.clientId = data.clientId;
+        this.clientFirstName = data.clientName;
+        this.clientCity = data.clientCity;
+        this.clientState = data.clientState;
+        this.clientType = data.clientType;
+        this.phoneNumber = data.phoneNumber;
+        this.clientZipCode = data.clientZipCode;
+        this.transCount = data.transCount;
+      }
+
+    });
+  }
+
+  findTheUserTransHistoryButtons()
+  {
+
+    let obs = this.http.get('http://localhost:8080/restproject/webapi/products/getTheUserHistory/'+this.clientName);
+
+    obs.subscribe((data:any) =>
+    {
+
+      if(data.result == false)
+      {
+        //there is an error
+        this.errorFlag = true;
+        this.historyFlag = false;
+        this.errorMessage = data.errorMessage;
+
+      }
+      else if(data.result == true)
+      {
+        //there is no error
+        this.errorFlag = false;
+        this.errorMessage = "";
+        this.historyFlag = true;
+
+        this.transList = data.transactionIds;
+      }
+
+    });
+
+  }
+
+  getTheBuyTransIdsList()
+  {
+    let obs = this.http.get('http://localhost:8080/restproject/webapi/products/getAllNewBuyTransactions/new');
+
+    obs.subscribe((data:any) =>
+    {
+
+      if(data.result == false)
