@@ -7,4 +7,7 @@ describe('HomepageTraderComponent', () => {
   let fixture: ComponentFixture<HomepageTraderComponent>;
 
   beforeEach(async(() => {
-    TestBed.config
+    TestBed.configureTestingModule({
+      declarations: [ HomepageTraderComponent ]
+    })
+ 
