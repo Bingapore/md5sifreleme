@@ -152,3 +152,22 @@ export class HomepageTraderComponent implements OnInit {
     {
 
       if(data.result == false)
+      {
+        //there is an error
+        this.errorFlag = true;
+        this.errorMessage = data.errorMessage;
+
+      }
+      else if(data.result == true)
+      {
+        //there is no error
+        this.errorFlag = false;
+        this.errorMessage = "";
+
+        this.buyTransList = data.transactionIds;
+      }
+
+    });
+  }
+
+}
