@@ -13,4 +13,6 @@ describe('LandingPageComponent', () => {
     .compileComponents();
   }));
 
-  beforeEach(
+  beforeEach(() => {
+    fixture = TestBed.createComponent(LandingPageComponent);
+  
