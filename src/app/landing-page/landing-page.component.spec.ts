@@ -16,4 +16,8 @@ describe('LandingPageComponent', () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(LandingPageComponent);
     component = fixture.componentInstance;
-    fixture.detectCha
+    fixture.detectChanges();
+  });
+
+  it('should create', () => {
+    expect(component).to
