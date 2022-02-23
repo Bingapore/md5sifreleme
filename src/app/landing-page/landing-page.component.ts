@@ -130,3 +130,30 @@ export class LandingPageComponent implements OnInit {
 
           if(data.result == true)
           {
+            //login --> change module
+
+            this.router.navigate(['/managerHomePage']);
+          }
+          else
+          {
+            this.errorFromResponse = true;
+            this.errorStringFromResponse = data.errorMessage;
+          }
+
+        });
+
+      }
+      else
+      {
+        this.errorShow = true;
+        this.errorFromResponse = false;
+        console.log("fail");
+      }
+    }
+    else
+    {
+      this.errorFromResponse = true;
+      this.errorStringFromResponse = "Select client or trader or manager ";
+    }
+  }
+}
