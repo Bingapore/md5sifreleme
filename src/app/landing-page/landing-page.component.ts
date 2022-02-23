@@ -55,3 +55,78 @@ export class LandingPageComponent implements OnInit {
         console.log("valid parameters");
         let obs = this.http.get('http://localhost:8080/restproject/webapi/products/login/'+this.userName+"/"+this.password);
         obs.subscribe((data:any) =>
+        {
+          console.log("login response : "+data.errorMessage);
+
+          if(data.result == true)
+          {
+            //login --> change module
+            this.primaryKeyService.setPrimaryKey(data.clientPrimaryKey);
+
+            this.router.navigate(['/homepage']);
+          }
+          else
+          {
+            this.errorFromResponse = true;
+            this.errorStringFromResponse = data.errorMessage;
+          }
+
+        });
+
+      }
+      else
+      {
+        this.errorShow = true;
+        this.errorFromResponse = false;
+        console.log("fail");
+      }
+    }
+    else if(this.loginType.length > 0 && this.loginType == "trader")
+    {
+      if( this.userName.length > 0 && this.password.length > 0)
+      {
+        this.errorShow = false;
+        this.errorFromResponse = false;
+        console.log("valid parameters trader");
+        let obs = this.http.get('http://localhost:8080/restproject/webapi/products/loginTrader/'+this.userName+"/"+this.password);
+        obs.subscribe((data:any) =>
+        {
+          console.log("login response : "+data.errorMessage);
+
+          if(data.result == true)
+          {
+            //login --> change module
+            this.primaryKeyService.setPrimaryKeyTrader(data.clientPrimaryKey);
+
+            this.router.navigate(['/homepageTrader']);
+          }
+          else
+          {
+            this.errorFromResponse = true;
+            this.errorStringFromResponse = data.errorMessage;
+          }
+
+        });
+
+      }
+      else
+      {
+        this.errorShow = true;
+        this.errorFromResponse = false;
+        console.log("fail");
+      }
+    }
+    else if(this.loginType.length > 0 && this.loginType == "manager")
+    {
+      if( this.userName.length > 0 && this.password.length > 0)
+      {
+        this.errorShow = false;
+        this.errorFromResponse = false;
+        console.log("valid parameters trader");
+        let obs = this.http.get('http://localhost:8080/restproject/webapi/products/loginManager/'+this.userName+"/"+this.password);
+        obs.subscribe((data:any) =>
+        {
+          console.log("login response : "+data.errorMessage);
+
+          if(data.result == true)
+          {
