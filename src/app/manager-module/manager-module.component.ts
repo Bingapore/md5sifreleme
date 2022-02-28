@@ -7,4 +7,9 @@ import { Router } from '@angular/router';
   templateUrl: './manager-module.component.html',
   styleUrls: ['./manager-module.component.css']
 })
-export class ManagerModuleComp
+export class ManagerModuleComponent implements OnInit {
+
+  fromDate:string = "";
+  toDate:string = "";
+
+  err
