@@ -4,4 +4,7 @@ import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-manager-module',
-  templateUrl: './manager-module.c
+  templateUrl: './manager-module.component.html',
+  styleUrls: ['./manager-module.component.css']
+})
+export class ManagerModuleComp
