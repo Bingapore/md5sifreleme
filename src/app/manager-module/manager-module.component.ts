@@ -15,4 +15,6 @@ export class ManagerModuleComponent implements OnInit {
   errorFromResponse:boolean = false;
   errorStringFromResponse:string = "";
 
- 
+  transList:number[];
+  historyFlag:boolean = false;
+  showDates:boolean = 
