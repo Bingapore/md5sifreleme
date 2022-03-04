@@ -17,4 +17,8 @@ export class ManagerModuleComponent implements OnInit {
 
   transList:number[];
   historyFlag:boolean = false;
-  showDates:boolean = 
+  showDates:boolean = false;
+
+  radioSelected:string = "";
+
+  constructor(private http: HttpCl
