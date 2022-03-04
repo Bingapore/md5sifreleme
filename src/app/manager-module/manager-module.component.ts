@@ -28,4 +28,7 @@ export class ManagerModuleComponent implements OnInit {
 
   parseFromDate(dateString: string) {
     if (dateString) {
-        console.log("dateString
+        console.log("dateString "+dateString);
+        this.fromDate = dateString;
+    } else {
+  
