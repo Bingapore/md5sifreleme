@@ -12,4 +12,7 @@ export class ManagerModuleComponent implements OnInit {
   fromDate:string = "";
   toDate:string = "";
 
-  err
+  errorFromResponse:boolean = false;
+  errorStringFromResponse:string = "";
+
+ 
