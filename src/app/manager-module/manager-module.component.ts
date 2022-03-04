@@ -31,4 +31,9 @@ export class ManagerModuleComponent implements OnInit {
         console.log("dateString "+dateString);
         this.fromDate = dateString;
     } else {
+        console.log("dateString"+dateString);
+        this.fromDate = "";
+    }
+  }
+
   
