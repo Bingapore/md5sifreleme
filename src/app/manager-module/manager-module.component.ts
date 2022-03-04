@@ -26,4 +26,6 @@ export class ManagerModuleComponent implements OnInit {
   ngOnInit() {
   }
 
-  parseFromDate(dat
+  parseFromDate(dateString: string) {
+    if (dateString) {
+        console.log("dateString
