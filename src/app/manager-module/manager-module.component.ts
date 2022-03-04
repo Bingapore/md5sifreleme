@@ -21,4 +21,9 @@ export class ManagerModuleComponent implements OnInit {
 
   radioSelected:string = "";
 
-  constructor(private http: HttpCl
+  constructor(private http: HttpClient , private router: Router) { }
+
+  ngOnInit() {
+  }
+
+  parseFromDate(dat
