@@ -36,4 +36,6 @@ export class ManagerModuleComponent implements OnInit {
     }
   }
 
-  
+  parseToDate(dateString: string) {
+    if (dateString) {
+        console.lo
