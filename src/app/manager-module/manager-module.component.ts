@@ -46,4 +46,8 @@ export class ManagerModuleComponent implements OnInit {
     }
   }
 
-  getThes
+  getTheseDates()
+  {
+    if(this.radioSelected == "dates")
+    {
+      if(this.toDate.length 
