@@ -53,3 +53,5 @@ export class ManagerModuleComponent implements OnInit {
       if(this.toDate.length > 0 && this.fromDate.length > 0)
       {
         this.historyFlag = false;
+        this.errorFromResponse = false;
+        this.errorStringFrom
