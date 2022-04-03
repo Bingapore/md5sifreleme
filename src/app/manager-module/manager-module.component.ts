@@ -54,4 +54,6 @@ export class ManagerModuleComponent implements OnInit {
       {
         this.historyFlag = false;
         this.errorFromResponse = false;
-        this.errorStringFrom
+        this.errorStringFromResponse = "";
+
+        let obs = this.http.get('http://localhost:8080/restprojec
