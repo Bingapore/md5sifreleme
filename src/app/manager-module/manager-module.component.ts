@@ -71,4 +71,6 @@ export class ManagerModuleComponent implements OnInit {
           }
           else
           {
-            this.historyFlag = fal
+            this.historyFlag = false;
+            this.errorFromResponse = true;
+            this.errorStringF
