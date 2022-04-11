@@ -68,4 +68,7 @@ export class ManagerModuleComponent implements OnInit {
 
             console.log("dates : "+data.transactionIds);
             this.transList = data.transactionIds
-      
+          }
+          else
+          {
+            this.historyFlag = fal
