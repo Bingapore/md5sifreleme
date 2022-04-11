@@ -66,4 +66,6 @@ export class ManagerModuleComponent implements OnInit {
           {
             //login --> change module
 
-            console.log("dates
+            console.log("dates : "+data.transactionIds);
+            this.transList = data.transactionIds
+      
