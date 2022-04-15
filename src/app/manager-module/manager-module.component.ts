@@ -73,4 +73,9 @@ export class ManagerModuleComponent implements OnInit {
           {
             this.historyFlag = false;
             this.errorFromResponse = true;
-            this.errorStringF
+            this.errorStringFromResponse = data.errorMessage;
+          }
+
+        });
+      }
+      e
