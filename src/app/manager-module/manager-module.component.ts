@@ -78,4 +78,7 @@ export class ManagerModuleComponent implements OnInit {
 
         });
       }
-      e
+      else
+      {
+        this.historyFlag = false;
+        this.errorFromR
