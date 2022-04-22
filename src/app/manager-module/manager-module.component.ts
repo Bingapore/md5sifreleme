@@ -82,4 +82,9 @@ export class ManagerModuleComponent implements OnInit {
       {
         this.historyFlag = false;
         this.errorFromResponse = true;
-        this.errorStringFromResponse = "select both the dates"
+        this.errorStringFromResponse = "select both the dates";
+      }
+    }
+    else if(this.radioSelected == "weeks")
+    {
+      this
