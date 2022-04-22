@@ -81,4 +81,5 @@ export class ManagerModuleComponent implements OnInit {
       else
       {
         this.historyFlag = false;
-        this.errorFromR
+        this.errorFromResponse = true;
+        this.errorStringFromResponse = "select both the dates"
