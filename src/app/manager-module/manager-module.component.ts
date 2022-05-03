@@ -92,4 +92,4 @@ export class ManagerModuleComponent implements OnInit {
       this.errorFromResponse = false;
       this.errorStringFromResponse = "";
 
-      let obs = this.
+      let obs = this.http.get('http://localhost:8080/restproject/webapi/products/managerDatesWeekly/tr
