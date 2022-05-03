@@ -89,4 +89,7 @@ export class ManagerModuleComponent implements OnInit {
     {
       this.showDates = false;
       this.historyFlag = false;
-      this.errorFromResponse
+      this.errorFromResponse = false;
+      this.errorStringFromResponse = "";
+
+      let obs = this.
