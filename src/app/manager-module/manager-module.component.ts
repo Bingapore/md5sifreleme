@@ -96,4 +96,8 @@ export class ManagerModuleComponent implements OnInit {
       obs.subscribe((data:any) =>
       {
         this.historyFlag = true;
-        console.log("login response : "+data.errorMe
+        console.log("login response : "+data.errorMessage);
+
+        if(data.result == true)
+        {
+          //login --> chang
