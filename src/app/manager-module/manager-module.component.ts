@@ -95,4 +95,5 @@ export class ManagerModuleComponent implements OnInit {
       let obs = this.http.get('http://localhost:8080/restproject/webapi/products/managerDatesWeekly/true');
       obs.subscribe((data:any) =>
       {
-        this.his
+        this.historyFlag = true;
+        console.log("login response : "+data.errorMe
