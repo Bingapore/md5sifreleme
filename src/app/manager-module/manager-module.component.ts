@@ -100,4 +100,7 @@ export class ManagerModuleComponent implements OnInit {
 
         if(data.result == true)
         {
-          //login --> chang
+          //login --> change module
+
+          console.log("dates week : "+data.transactionIds);
+     
