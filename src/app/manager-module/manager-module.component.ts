@@ -105,4 +105,7 @@ export class ManagerModuleComponent implements OnInit {
           console.log("dates week : "+data.transactionIds);
           this.transList = data.transactionIds
         }
-     
+        else
+        {
+          this.historyFlag = false;
+          thi
