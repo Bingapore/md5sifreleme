@@ -115,4 +115,7 @@ export class ManagerModuleComponent implements OnInit {
       });
 
     }
-    else if(this.radio
+    else if(this.radioSelected == "months")
+    {
+      this.showDates = false;
+      this.historyFla
