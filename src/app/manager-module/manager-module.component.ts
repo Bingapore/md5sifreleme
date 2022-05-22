@@ -120,4 +120,6 @@ export class ManagerModuleComponent implements OnInit {
       this.showDates = false;
       this.historyFlag = false;
       this.errorFromResponse = false;
-      this.errorStringFr
+      this.errorStringFromResponse = "";
+
+      let obs = this.http.get('http://localhost:80
