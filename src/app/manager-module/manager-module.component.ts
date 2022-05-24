@@ -123,4 +123,7 @@ export class ManagerModuleComponent implements OnInit {
       this.errorStringFromResponse = "";
 
       let obs = this.http.get('http://localhost:8080/restproject/webapi/products/managerDatesWeekly/false');
-      obs.sub
+      obs.subscribe((data:any) =>
+      {
+        this.historyFlag = true;
+       
