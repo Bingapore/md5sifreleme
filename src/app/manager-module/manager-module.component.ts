@@ -128,4 +128,8 @@ export class ManagerModuleComponent implements OnInit {
         this.historyFlag = true;
         console.log("login response : "+data.errorMessage);
 
-        if(data.res
+        if(data.result == true)
+        {
+          //login --> change module
+
+          console.
