@@ -132,4 +132,5 @@ export class ManagerModuleComponent implements OnInit {
         {
           //login --> change module
 
-          console.
+          console.log("dates month : "+data.transactionIds);
+          this.transList = data.tran
