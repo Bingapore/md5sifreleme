@@ -133,4 +133,8 @@ export class ManagerModuleComponent implements OnInit {
           //login --> change module
 
           console.log("dates month : "+data.transactionIds);
-          this.transList = data.tran
+          this.transList = data.transactionIds
+        }
+        else
+        {
+          this.historyFlag = fals
