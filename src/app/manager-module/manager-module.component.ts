@@ -139,4 +139,11 @@ export class ManagerModuleComponent implements OnInit {
         {
           this.historyFlag = false;
           this.errorFromResponse = true;
-          this.errorString
+          this.errorStringFromResponse = data.errorMessage;
+        }
+
+      });
+
+    }
+    else
+   
