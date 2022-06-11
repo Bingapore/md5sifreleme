@@ -149,4 +149,9 @@ export class ManagerModuleComponent implements OnInit {
     {
       this.historyFlag = false;
       this.errorFromResponse = true;
-  
+      this.errorStringFromResponse = "select at least one option";
+    }
+
+
+  }
+
