@@ -160,4 +160,7 @@ export class ManagerModuleComponent implements OnInit {
     this.radioSelected = event.target.value;
     this.errorFromResponse = false;
 
-    if(this.radioSelected == "dat
+    if(this.radioSelected == "dates")
+    {
+      //select two dates
+      this.showDates = tr
