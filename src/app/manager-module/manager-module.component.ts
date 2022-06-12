@@ -157,4 +157,7 @@ export class ManagerModuleComponent implements OnInit {
 
   radioDatesSelection(event:any)
   {
-    this.radioSelected = event.target.valu
+    this.radioSelected = event.target.value;
+    this.errorFromResponse = false;
+
+    if(this.radioSelected == "dat
