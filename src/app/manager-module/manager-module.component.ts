@@ -167,4 +167,6 @@ export class ManagerModuleComponent implements OnInit {
     }
     else if(this.radioSelected == "weeks")
     {
-     
+      this.showDates = false;
+    }
+    else if(this.radioSelected == "mo
