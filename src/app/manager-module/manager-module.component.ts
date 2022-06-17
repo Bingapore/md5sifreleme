@@ -169,4 +169,10 @@ export class ManagerModuleComponent implements OnInit {
     {
       this.showDates = false;
     }
-    else if(this.radioSelected == "mo
+    else if(this.radioSelected == "months")
+    {
+      this.showDates = false;
+    }
+  }
+
+}
