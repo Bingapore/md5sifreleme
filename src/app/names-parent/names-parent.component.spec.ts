@@ -10,4 +10,8 @@ describe('NamesParentComponent', () => {
     TestBed.configureTestingModule({
       declarations: [ NamesParentComponent ]
     })
-    .co
+    .compileComponents();
+  }));
+
+  beforeEach(() => {
+    fixture = 
