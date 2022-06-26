@@ -7,4 +7,7 @@ describe('NamesParentComponent', () => {
   let fixture: ComponentFixture<NamesParentComponent>;
 
   beforeEach(async(() => {
-    TestBe
+    TestBed.configureTestingModule({
+      declarations: [ NamesParentComponent ]
+    })
+    .co
