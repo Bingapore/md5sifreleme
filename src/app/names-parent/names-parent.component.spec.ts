@@ -14,4 +14,5 @@ describe('NamesParentComponent', () => {
   }));
 
   beforeEach(() => {
-    fixture = 
+    fixture = TestBed.createComponent(NamesParentComponent);
+    component = f
