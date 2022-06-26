@@ -4,4 +4,7 @@ import { NamesParentComponent } from './names-parent.component';
 
 describe('NamesParentComponent', () => {
   let component: NamesParentComponent;
-  let fixture: Co
+  let fixture: ComponentFixture<NamesParentComponent>;
+
+  beforeEach(async(() => {
+    TestBe
