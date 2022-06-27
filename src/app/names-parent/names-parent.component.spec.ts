@@ -19,4 +19,7 @@ describe('NamesParentComponent', () => {
     fixture.detectChanges();
   });
 
-  it('sho
+  it('should create', () => {
+    expect(component).toBeTruthy();
+  });
+});
