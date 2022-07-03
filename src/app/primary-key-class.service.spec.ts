@@ -7,4 +7,6 @@ describe('PrimaryKeyClassService', () => {
 
   it('should be created', () => {
     const service: PrimaryKeyClassService = TestBed.get(PrimaryKeyClassService);
-    e
+    expect(service).toBeTruthy();
+  });
+});
