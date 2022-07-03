@@ -6,4 +6,5 @@ describe('PrimaryKeyClassService', () => {
   beforeEach(() => TestBed.configureTestingModule({}));
 
   it('should be created', () => {
-    const 
+    const service: PrimaryKeyClassService = TestBed.get(PrimaryKeyClassService);
+    e
