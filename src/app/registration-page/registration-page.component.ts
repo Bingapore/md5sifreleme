@@ -1,3 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-impo
+import { Router } from '@angular/router';
+
+@Component({
+  selector: 'app-registration-p
