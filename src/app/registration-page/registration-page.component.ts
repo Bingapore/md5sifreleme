@@ -7,4 +7,8 @@ import { Router } from '@angular/router';
   templateUrl: './registration-page.component.html',
   styleUrls: ['./registration-page.component.css']
 })
-export class RegistrationPageComponent implements
+export class RegistrationPageComponent implements OnInit {
+  errorMessage:string = "";
+
+  userName:string = "";
+  p
