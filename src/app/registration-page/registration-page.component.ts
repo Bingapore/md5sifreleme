@@ -14,4 +14,9 @@ export class RegistrationPageComponent implements OnInit {
   password:string = "";
   firstName:string = "";
   lastName:string = "";
-  phoneNu
+  phoneNumber:number ;
+  userEmail:string = "";
+  initialBitCoins:number = 0;
+
+  //clientType
+  clientT
