@@ -11,4 +11,7 @@ export class RegistrationPageComponent implements OnInit {
   errorMessage:string = "";
 
   userName:string = "";
-  p
+  password:string = "";
+  firstName:string = "";
+  lastName:string = "";
+  phoneNu
