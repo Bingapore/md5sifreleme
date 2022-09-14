@@ -19,4 +19,8 @@ export class RegistrationPageComponent implements OnInit {
   initialBitCoins:number = 0;
 
   //clientType
-  clientT
+  clientType:string = "";
+
+  //AddressVariables
+  stateAddress:string = "";
+ 
