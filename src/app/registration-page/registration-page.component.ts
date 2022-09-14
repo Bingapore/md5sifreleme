@@ -23,4 +23,8 @@ export class RegistrationPageComponent implements OnInit {
 
   //AddressVariables
   stateAddress:string = "";
+  cityAddress:string = "";
+  zipCodeAddress:number ;
+  streetAddress:string = "";
+
  
