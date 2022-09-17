@@ -27,4 +27,6 @@ export class RegistrationPageComponent implements OnInit {
   zipCodeAddress:number ;
   streetAddress:string = "";
 
- 
+  errorFlag:boolean = false;
+
+  constructor(private http: HttpClient , pr
