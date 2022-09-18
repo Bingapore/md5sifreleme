@@ -33,4 +33,9 @@ export class RegistrationPageComponent implements OnInit {
    { }
 
   ngOnInit() {
-    this.errorFlag 
+    this.errorFlag = false;
+  }
+
+  registrationInputForUserName(event:any)
+  {
+    this.us
