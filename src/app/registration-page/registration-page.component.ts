@@ -29,4 +29,8 @@ export class RegistrationPageComponent implements OnInit {
 
   errorFlag:boolean = false;
 
-  constructor(private http: HttpClient , pr
+  constructor(private http: HttpClient , private router: Router)
+   { }
+
+  ngOnInit() {
+    this.errorFlag 
