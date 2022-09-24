@@ -46,4 +46,9 @@ export class RegistrationPageComponent implements OnInit {
     this.password = event.target.value;
   }
 
-  reg
+  registrationInputForFirstName(event:any)
+  {
+    this.firstName = event.target.value;
+  }
+
+  regis
