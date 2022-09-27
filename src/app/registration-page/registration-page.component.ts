@@ -51,4 +51,6 @@ export class RegistrationPageComponent implements OnInit {
     this.firstName = event.target.value;
   }
 
-  regis
+  registrationInputForLastName(event:any)
+  {
+    this.lastName = event.target
