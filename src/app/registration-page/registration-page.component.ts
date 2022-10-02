@@ -63,4 +63,8 @@ export class RegistrationPageComponent implements OnInit {
 
   registrationInputForEmail(event:any)
   {
-  
+    this.userEmail = event.target.value;
+  }
+
+  radioClientType(event:any)
+  {
