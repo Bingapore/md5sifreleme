@@ -58,4 +58,9 @@ export class RegistrationPageComponent implements OnInit {
 
   registrationInputForPhoneNumber(event:any)
   {
-    this.phoneNumber =
+    this.phoneNumber = event.target.value;
+  }
+
+  registrationInputForEmail(event:any)
+  {
+  
