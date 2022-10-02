@@ -53,4 +53,9 @@ export class RegistrationPageComponent implements OnInit {
 
   registrationInputForLastName(event:any)
   {
-    this.lastName = event.target
+    this.lastName = event.target.value;
+  }
+
+  registrationInputForPhoneNumber(event:any)
+  {
+    this.phoneNumber =
