@@ -68,3 +68,7 @@ export class RegistrationPageComponent implements OnInit {
 
   radioClientType(event:any)
   {
+    this.clientType = event.target.value;
+  }
+
+  //take the
