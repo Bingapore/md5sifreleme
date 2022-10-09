@@ -71,4 +71,7 @@ export class RegistrationPageComponent implements OnInit {
     this.clientType = event.target.value;
   }
 
-  //take the
+  //take the address input
+  registrationInputForAddState(event:any)
+  {
+    this.stateAddres
