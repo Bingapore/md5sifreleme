@@ -74,4 +74,7 @@ export class RegistrationPageComponent implements OnInit {
   //take the address input
   registrationInputForAddState(event:any)
   {
-    this.stateAddres
+    this.stateAddress = event.target.value;
+  }
+
+  registrationInputForAddCity(event:
