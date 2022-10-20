@@ -86,3 +86,7 @@ export class RegistrationPageComponent implements OnInit {
   {
     this.zipCodeAddress = event.target.value;
   }
+
+  registrationInputForAddStreet(event:any)
+  {
+    this.streetAddress = event.targe
