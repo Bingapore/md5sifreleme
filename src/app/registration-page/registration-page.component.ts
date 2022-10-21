@@ -89,4 +89,11 @@ export class RegistrationPageComponent implements OnInit {
 
   registrationInputForAddStreet(event:any)
   {
-    this.streetAddress = event.targe
+    this.streetAddress = event.target.value;
+  }
+
+
+  validateRegistration()
+  {
+
+    if( this.userName.lengt
