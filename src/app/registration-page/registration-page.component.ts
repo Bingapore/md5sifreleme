@@ -96,4 +96,4 @@ export class RegistrationPageComponent implements OnInit {
   validateRegistration()
   {
 
-    if( this.userName.lengt
+    if( this.userName.length == 0 || this.password.length == 0 || this.firstName.length == 0 || this.la
