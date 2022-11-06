@@ -96,4 +96,7 @@ export class RegistrationPageComponent implements OnInit {
   validateRegistration()
   {
 
-    if( this.userName.length == 0 || this.password.length == 0 || this.firstName.length == 0 || this.lastName.length == 0 || this.phoneNumber.toString().length == 0 || this.userEmail.length == 0 || this.stateAddress.length == 0 || this.cityAddress.length == 0 || this.zipCodeAddress.toString().length == 0 || this.streetAddress.lengt
+    if( this.userName.length == 0 || this.password.length == 0 || this.firstName.length == 0 || this.lastName.length == 0 || this.phoneNumber.toString().length == 0 || this.userEmail.length == 0 || this.stateAddress.length == 0 || this.cityAddress.length == 0 || this.zipCodeAddress.toString().length == 0 || this.streetAddress.length == 0 )
+    {
+      this.errorFlag = true;
+      this.errorMessage = "Pleas
