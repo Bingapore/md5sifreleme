@@ -101,4 +101,7 @@ export class RegistrationPageComponent implements OnInit {
       this.errorFlag = true;
       this.errorMessage = "Please enter all the fields";
       console.log(this.errorMessage);
-   
+      return;
+    }
+
+    if(this.phoneNumber.toString().length < 10 ||
