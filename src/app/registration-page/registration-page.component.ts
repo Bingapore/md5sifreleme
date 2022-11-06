@@ -104,4 +104,6 @@ export class RegistrationPageComponent implements OnInit {
       return;
     }
 
-    if(this.phoneNumber.toString().length < 10 ||
+    if(this.phoneNumber.toString().length < 10 || this.phoneNumber.toString().length > 10)
+    {
+      this.errorFlag = t
