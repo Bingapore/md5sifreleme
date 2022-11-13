@@ -112,4 +112,7 @@ export class RegistrationPageComponent implements OnInit {
       return;
     }
 
-    if(this.phoneNumber.toStrin
+    if(this.phoneNumber.toString().length == 10 && isNaN(this.phoneNumber))
+    {
+      this.errorFlag = true;
+      this.e
