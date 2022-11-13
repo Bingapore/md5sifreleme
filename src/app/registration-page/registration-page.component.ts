@@ -106,4 +106,6 @@ export class RegistrationPageComponent implements OnInit {
 
     if(this.phoneNumber.toString().length < 10 || this.phoneNumber.toString().length > 10)
     {
-      this.errorFlag = t
+      this.errorFlag = true;
+      this.errorMessage = "enter a 10 digit number";
+      console.log(th
