@@ -108,4 +108,8 @@ export class RegistrationPageComponent implements OnInit {
     {
       this.errorFlag = true;
       this.errorMessage = "enter a 10 digit number";
-      console.log(th
+      console.log(this.errorMessage);
+      return;
+    }
+
+    if(this.phoneNumber.toStrin
