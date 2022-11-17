@@ -115,4 +115,5 @@ export class RegistrationPageComponent implements OnInit {
     if(this.phoneNumber.toString().length == 10 && isNaN(this.phoneNumber))
     {
       this.errorFlag = true;
-      this.e
+      this.errorMessage = "enter only numbers as a PhoneNumber";
+      console.log(th
