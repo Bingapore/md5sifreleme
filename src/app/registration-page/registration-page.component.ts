@@ -116,4 +116,9 @@ export class RegistrationPageComponent implements OnInit {
     {
       this.errorFlag = true;
       this.errorMessage = "enter only numbers as a PhoneNumber";
-      console.log(th
+      console.log(this.errorMessage);
+      return;
+    }
+
+    if(this.clientType.length == 0)
+    
