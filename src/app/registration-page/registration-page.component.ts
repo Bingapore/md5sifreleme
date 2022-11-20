@@ -121,4 +121,6 @@ export class RegistrationPageComponent implements OnInit {
     }
 
     if(this.clientType.length == 0)
-    
+    {
+      this.errorFlag = true;
+      this.errorMessage = "Are you a Trader or a Client?
