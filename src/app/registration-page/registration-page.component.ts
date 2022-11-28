@@ -128,4 +128,4 @@ export class RegistrationPageComponent implements OnInit {
       return;
     }
 
-    if(this
+    if(this.zipCodeAddress.toString().length < 5 || this.zipCodeAddress.toString(
