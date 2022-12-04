@@ -128,4 +128,7 @@ export class RegistrationPageComponent implements OnInit {
       return;
     }
 
-    if(this.zipCodeAddress.toString().length < 5 || this.zipCodeAddress.toString(
+    if(this.zipCodeAddress.toString().length < 5 || this.zipCodeAddress.toString().length > 5)
+    {
+      this.errorFlag = true;
+      this.errorMessage 
