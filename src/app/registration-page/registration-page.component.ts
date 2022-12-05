@@ -131,4 +131,5 @@ export class RegistrationPageComponent implements OnInit {
     if(this.zipCodeAddress.toString().length < 5 || this.zipCodeAddress.toString().length > 5)
     {
       this.errorFlag = true;
-      this.errorMessage 
+      this.errorMessage = "enter a 5 digit Zipcode";
+      console.log(this.errorMessag
