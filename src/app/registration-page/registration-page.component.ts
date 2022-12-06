@@ -136,4 +136,7 @@ export class RegistrationPageComponent implements OnInit {
       return;
     }
 
-    if(this.zipCodeAddress.toString().length == 5 && isNaN(
+    if(this.zipCodeAddress.toString().length == 5 && isNaN(this.zipCodeAddress))
+    {
+      this.errorFlag = true;
+      t
