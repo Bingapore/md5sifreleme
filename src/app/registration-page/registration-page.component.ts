@@ -139,4 +139,5 @@ export class RegistrationPageComponent implements OnInit {
     if(this.zipCodeAddress.toString().length == 5 && isNaN(this.zipCodeAddress))
     {
       this.errorFlag = true;
-      t
+      this.errorMessage = "enter only numbers in Zipcode";
+      console.log(t
