@@ -140,4 +140,9 @@ export class RegistrationPageComponent implements OnInit {
     {
       this.errorFlag = true;
       this.errorMessage = "enter only numbers in Zipcode";
-      console.log(t
+      console.log(this.errorMessage);
+      return;
+    }
+
+    this.errorFlag = false;
+    this.e
