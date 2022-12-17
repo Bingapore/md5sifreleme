@@ -147,3 +147,5 @@ export class RegistrationPageComponent implements OnInit {
     this.errorFlag = false;
     this.errorMessage = "success";
     console.log("final "+this.errorMessage);
+
+    let obs = this.http.post('http://localhost:8080/restproj
