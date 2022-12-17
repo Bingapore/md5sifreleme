@@ -145,4 +145,5 @@ export class RegistrationPageComponent implements OnInit {
     }
 
     this.errorFlag = false;
-    this.e
+    this.errorMessage = "success";
+    console.log("final "+this.errorMessage);
