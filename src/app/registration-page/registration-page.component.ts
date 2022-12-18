@@ -148,4 +148,6 @@ export class RegistrationPageComponent implements OnInit {
     this.errorMessage = "success";
     console.log("final "+this.errorMessage);
 
-    let obs = this.http.post('http://localhost:8080/restproj
+    let obs = this.http.post('http://localhost:8080/restproject/webapi/products/newClientCreation/',
+    {"userName":this.userName,
+      "password
