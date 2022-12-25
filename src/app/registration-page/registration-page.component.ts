@@ -150,4 +150,7 @@ export class RegistrationPageComponent implements OnInit {
 
     let obs = this.http.post('http://localhost:8080/restproject/webapi/products/newClientCreation/',
     {"userName":this.userName,
-      "password
+      "password":this.password,
+      "firstName":this.firstName,
+      "lastName":this.lastName,
+  
