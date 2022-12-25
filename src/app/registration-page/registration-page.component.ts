@@ -153,4 +153,6 @@ export class RegistrationPageComponent implements OnInit {
       "password":this.password,
       "firstName":this.firstName,
       "lastName":this.lastName,
-  
+      "phoneNumber":this.phoneNumber,
+      "userEmail":this.userEmail,
+     
