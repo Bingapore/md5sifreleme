@@ -156,4 +156,6 @@ export class RegistrationPageComponent implements OnInit {
       "phoneNumber":this.phoneNumber,
       "userEmail":this.userEmail,
       "initialBitCoins":this.initialBitCoins,
-      "cli
+      "clientType":this.clientType,
+      "stateAddress":this.stateAddress,
+      "cityAd
