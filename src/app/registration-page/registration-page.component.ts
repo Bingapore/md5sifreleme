@@ -158,4 +158,6 @@ export class RegistrationPageComponent implements OnInit {
       "initialBitCoins":this.initialBitCoins,
       "clientType":this.clientType,
       "stateAddress":this.stateAddress,
-      "cityAd
+      "cityAddress":this.cityAddress,
+      "zipCodeAddress":this.zipCodeAddress,
+      "streetAddress
