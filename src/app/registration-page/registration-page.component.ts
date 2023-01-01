@@ -171,4 +171,6 @@ export class RegistrationPageComponent implements OnInit {
       console.log("response : "+res.responseMessage);
       if(res.result == 0)
       {
-        this.er
+        this.errorFlag = true;
+        this.errorMessage = res.responseMessage;
+      
