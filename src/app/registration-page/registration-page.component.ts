@@ -166,3 +166,6 @@ export class RegistrationPageComponent implements OnInit {
 
 
     obs.subscribe((data:any) => {
+      console.log(data);
+      var res = data;
+      console.log("r
