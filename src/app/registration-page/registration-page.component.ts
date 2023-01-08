@@ -176,4 +176,8 @@ export class RegistrationPageComponent implements OnInit {
       }
       else if(res.result == 1)
       {
-        this.router.navigate(['/login'
+        this.router.navigate(['/login']);
+      }
+      } ,
+                  (err:any) => {
+                      cons
