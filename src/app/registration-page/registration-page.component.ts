@@ -180,4 +180,9 @@ export class RegistrationPageComponent implements OnInit {
       }
       } ,
                   (err:any) => {
-                      cons
+                      console.log(err);
+                  });
+
+  }
+
+}
