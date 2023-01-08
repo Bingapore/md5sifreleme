@@ -173,4 +173,7 @@ export class RegistrationPageComponent implements OnInit {
       {
         this.errorFlag = true;
         this.errorMessage = res.responseMessage;
-      
+      }
+      else if(res.result == 1)
+      {
+        this.router.navigate(['/login'
