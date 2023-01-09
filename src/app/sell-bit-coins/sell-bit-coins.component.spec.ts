@@ -1,1 +1,3 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/tes
+import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+
+import { SellBitCoinsComponent } from './sell-bit-coins.component';
