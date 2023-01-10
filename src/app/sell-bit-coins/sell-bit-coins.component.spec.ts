@@ -8,4 +8,9 @@ describe('SellBitCoinsComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [
+      declarations: [ SellBitCoinsComponent ]
+    })
+    .compileComponents();
+  }));
+
+  beforeEach(()
