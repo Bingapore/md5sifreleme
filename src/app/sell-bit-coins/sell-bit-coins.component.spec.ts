@@ -13,4 +13,6 @@ describe('SellBitCoinsComponent', () => {
     .compileComponents();
   }));
 
-  beforeEach(()
+  beforeEach(() => {
+    fixture = TestBed.createComponent(SellBitCoinsComponent);
+    co
