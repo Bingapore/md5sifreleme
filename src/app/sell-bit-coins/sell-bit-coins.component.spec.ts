@@ -21,4 +21,5 @@ describe('SellBitCoinsComponent', () => {
 
   it('should create', () => {
     expect(component).toBeTruthy();
- 
+  });
+});
