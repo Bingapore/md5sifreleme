@@ -140,3 +140,89 @@ export class SellBitCoinsComponent implements OnInit {
     //radio
     this.radioSelected = event.target.value;
     console.log("this.radioSelected "+this.radioSelected);
+  }
+
+  sellBitCoins()
+  {
+    //final sell
+
+    //bDesired should be a number > 0
+    if(this.radioSelected.length > 0 && this.radioSelected == "BitCoin" && this.bDesired > 0 && !isNaN( this.bDesired ))
+    {
+
+        let obs111 = this.http.post('http://localhost:8080/restproject/webapi/products/newClientBuyTransaction/',
+        {"clientId":this.userPrimaryKey,
+          "transType":"sell",
+          "transVal":this.bDesired,
+          "transCommission":this.calCommissionBit,
+          "transCommissionType":this.radioSelected,
+          "transStatus":"new",
+          "bitCoinValue":this.bValue
+        }
+        );
+
+
+        obs111.subscribe((data:any) => {
+          console.log("result : "+data.result);
+          if(data.result == true)
+          {
+
+            let obsNew = this.http.get('http://localhost:8080/restproject/webapi/products/balance/'+this.userPrimaryKey);
+
+            obsNew.subscribe((data:any) =>
+            {
+
+              console.log("accounts response : "+data.errorMessage);
+
+
+              if(data.result == false)
+              {
+                this.errorMessageFromResponse = data.errorMessage;
+                this.errorFlag = true;
+              }
+              else if(data.result == true)
+              {
+                this.bitCoins = data.clientBitCoins;
+                this.fiatCurrency = data.clientFiatCurrency;
+                this.errorFlag = false;
+              }
+
+            });
+
+          }
+          } ,
+          (err:any) => {
+              console.log("err : "+err);
+          });
+
+    }
+    else if(this.radioSelected.length > 0 && this.radioSelected == "FiatCash" && this.bDesired > 0 && !isNaN( this.bDesired ))
+    {
+      //code for FiatCash
+      console.log("radio : "+this.radioSelected);
+      let obs111 = this.http.post('http://localhost:8080/restproject/webapi/products/newClientBuyTransaction/',
+      {"clientId":this.userPrimaryKey,
+        "transType":"sell",
+        "transVal":this.bDesired,
+        "transCommission":this.calCommissionFiat,
+        "transCommissionType":this.radioSelected,
+        "transStatus":"new",
+        "bitCoinValue":this.bValue
+      }
+      );
+
+
+      obs111.subscribe((data:any) => {
+        console.log("result : "+data.result);
+        if(data.result == true)
+        {
+
+          let obsNew = this.http.get('http://localhost:8080/restproject/webapi/products/balance/'+this.userPrimaryKey);
+
+          obsNew.subscribe((data:any) =>
+          {
+
+            console.log("accounts response fiat : "+data.errorMessage);
+
+
+            if(data.result == false)
