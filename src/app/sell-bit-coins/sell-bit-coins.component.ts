@@ -226,3 +226,30 @@ export class SellBitCoinsComponent implements OnInit {
 
 
             if(data.result == false)
+            {
+              this.errorMessageFromResponse = data.errorMessage;
+              this.errorFlag = true;
+            }
+            else if(data.result == true)
+            {
+              this.bitCoins = data.clientBitCoins;
+              this.fiatCurrency = data.clientFiatCurrency;
+              this.errorFlag = false;
+            }
+
+          });
+
+        }
+        } ,
+        (err:any) => {
+            console.log("err : "+err);
+        });
+    }
+    else
+    {
+      this.errorFlag = true;
+      this.errorMessageFromResponse = "select Bitcoin or FiatCurrency";
+    }
+
+  }
+}
