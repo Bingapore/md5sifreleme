@@ -3,4 +3,5 @@ import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-testing-part',
-  templateUrl: './testing-
+  templateUrl: './testing-part.component.html',
+  styleUrls: ['./testing-part.component.css'
