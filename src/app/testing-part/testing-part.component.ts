@@ -8,4 +8,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class TestingPartComponent implements OnInit {
 
-  nameToPost:s
+  nameToPost:string = "";
+  costToPost:number ;
+  costToGet:string = "";
+  title
