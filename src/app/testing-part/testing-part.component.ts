@@ -13,4 +13,11 @@ export class TestingPartComponent implements OnInit {
   costToGet:string = "";
   title:string = 'first-web-app';
   fromParent:string = '';
-  namesList = ['ravi','teja
+  namesList = ['ravi','teja','Talari','Ramesh','Rama']
+
+  constructor(private http: HttpClient)
+  {
+
+  }
+
+  ngO
