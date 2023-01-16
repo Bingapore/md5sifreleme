@@ -11,4 +11,6 @@ export class TestingPartComponent implements OnInit {
   nameToPost:string = "";
   costToPost:number ;
   costToGet:string = "";
-  title
+  title:string = 'first-web-app';
+  fromParent:string = '';
+  namesList = ['ravi','teja
