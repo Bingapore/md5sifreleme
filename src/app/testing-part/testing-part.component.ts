@@ -31,4 +31,7 @@ export class TestingPartComponent implements OnInit {
     this.fromParent = passedParent;
   }
 
-  onTextEnteredInInput
+  onTextEnteredInInputForPostName(event:any)
+  {
+    this.nameToPost = event.target.value;
+  
