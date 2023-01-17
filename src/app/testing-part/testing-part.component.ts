@@ -28,3 +28,7 @@ export class TestingPartComponent implements OnInit {
 
   parentEmitter(passedParent:string)
   {
+    this.fromParent = passedParent;
+  }
+
+  onTextEnteredInInput
