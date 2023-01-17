@@ -20,4 +20,11 @@ export class TestingPartComponent implements OnInit {
 
   }
 
-  ngO
+  ngOnInit()
+  {
+    console.log("in ngOnInit()")
+
+  }
+
+  parentEmitter(passedParent:string)
+  {
