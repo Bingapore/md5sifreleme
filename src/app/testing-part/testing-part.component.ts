@@ -34,4 +34,8 @@ export class TestingPartComponent implements OnInit {
   onTextEnteredInInputForPostName(event:any)
   {
     this.nameToPost = event.target.value;
-  
+  }
+
+  onTextEnteredInInputForPostCost(event:any)
+  {
+    this.costTo
