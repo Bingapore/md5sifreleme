@@ -49,4 +49,6 @@ export class TestingPartComponent implements OnInit {
   postThisData()
   {
     // console.log("posting "+this.costToPost);
-    if(this.nameToPost.l
+    if(this.nameToPost.length > 0 && this.costToPost.toString().length > 0 )
+    {
+      //
