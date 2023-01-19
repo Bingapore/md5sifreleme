@@ -41,4 +41,11 @@ export class TestingPartComponent implements OnInit {
     this.costToPost = event.target.value;
   }
 
-  onTextEnteredInInputForGet(event:an
+  onTextEnteredInInputForGet(event:any)
+  {
+    this.costToGet = event.target.value;
+  }
+
+  postThisData()
+  {
+    //
