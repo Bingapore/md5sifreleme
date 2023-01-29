@@ -51,4 +51,5 @@ export class TestingPartComponent implements OnInit {
     // console.log("posting "+this.costToPost);
     if(this.nameToPost.length > 0 && this.costToPost.toString().length > 0 )
     {
-      //
+      // console.log("inside if condition");
+      let obs = this.http.
