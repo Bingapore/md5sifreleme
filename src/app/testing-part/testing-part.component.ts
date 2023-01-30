@@ -59,4 +59,10 @@ export class TestingPartComponent implements OnInit {
 
       obs.subscribe((data:any) => console.log(data));
     }
- 
+    else
+    {
+      console.log("please fill both the input's");
+    }
+  }
+
+  getThisPro
