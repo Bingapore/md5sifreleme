@@ -53,4 +53,5 @@ export class TestingPartComponent implements OnInit {
     {
       // console.log("inside if condition");
       let obs = this.http.post('http://localhost:8080/restproject/webapi/products/newProduct/',
- 
+      {"pName":this.nameToPost,
+        "pCost":this.costToPos
