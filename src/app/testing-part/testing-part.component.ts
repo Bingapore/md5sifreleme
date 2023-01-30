@@ -52,4 +52,5 @@ export class TestingPartComponent implements OnInit {
     if(this.nameToPost.length > 0 && this.costToPost.toString().length > 0 )
     {
       // console.log("inside if condition");
-      let obs = this.http.
+      let obs = this.http.post('http://localhost:8080/restproject/webapi/products/newProduct/',
+ 
