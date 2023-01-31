@@ -65,4 +65,7 @@ export class TestingPartComponent implements OnInit {
     }
   }
 
-  getThisPro
+  getThisProduct()
+  {
+    console.log("get this data "+this.costToGet);
+    conso
