@@ -68,4 +68,4 @@ export class TestingPartComponent implements OnInit {
   getThisProduct()
   {
     console.log("get this data "+this.costToGet);
-    conso
+    console.log('http://localhost:8080/restproject/webapi/products/produ
