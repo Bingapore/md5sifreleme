@@ -69,4 +69,5 @@ export class TestingPartComponent implements OnInit {
   {
     console.log("get this data "+this.costToGet);
     console.log('http://localhost:8080/restproject/webapi/products/product/'+this.costToGet);
-    let obs = this.http.get('http://localhost:8080/
+    let obs = this.http.get('http://localhost:8080/restproject/webapi/products/product/'+this.costToGet);
+    obs.subscri
