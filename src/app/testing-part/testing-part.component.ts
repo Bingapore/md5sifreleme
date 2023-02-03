@@ -75,4 +75,5 @@ export class TestingPartComponent implements OnInit {
 
   getCompleteData()
   {
-    
+    console.log("in getCompleteData()")
+    let obs = this.http.get("http://localho
