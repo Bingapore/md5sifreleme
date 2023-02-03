@@ -77,4 +77,7 @@ export class TestingPartComponent implements OnInit {
   {
     console.log("in getCompleteData()")
     let obs = this.http.get("http://localhost:8080/restproject/webapi/products");
-    obs.subscribe((data:any[]
+    obs.subscribe((data:any[]) => console.log(data));
+  }
+
+}
