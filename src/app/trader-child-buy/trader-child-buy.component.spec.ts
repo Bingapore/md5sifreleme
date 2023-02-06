@@ -7,4 +7,7 @@ describe('TraderChildBuyComponent', () => {
   let fixture: ComponentFixture<TraderChildBuyComponent>;
 
   beforeEach(async(() => {
-    TestBed.config
+    TestBed.configureTestingModule({
+      declarations: [ TraderChildBuyComponent ]
+    })
+    .com
