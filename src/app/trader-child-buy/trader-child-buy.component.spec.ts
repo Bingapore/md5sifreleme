@@ -4,4 +4,7 @@ import { TraderChildBuyComponent } from './trader-child-buy.component';
 
 describe('TraderChildBuyComponent', () => {
   let component: TraderChildBuyComponent;
-  let fixture: ComponentFixture<T
+  let fixture: ComponentFixture<TraderChildBuyComponent>;
+
+  beforeEach(async(() => {
+    TestBed.config
