@@ -10,4 +10,8 @@ describe('TraderChildBuyComponent', () => {
     TestBed.configureTestingModule({
       declarations: [ TraderChildBuyComponent ]
     })
-    .com
+    .compileComponents();
+  }));
+
+  beforeEach(() => {
+    fixture = TestB
