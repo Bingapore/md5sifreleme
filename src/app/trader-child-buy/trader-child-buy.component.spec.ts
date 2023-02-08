@@ -15,4 +15,8 @@ describe('TraderChildBuyComponent', () => {
 
   beforeEach(() => {
     fixture = TestBed.createComponent(TraderChildBuyComponent);
-    component = fixture
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+  });
+
+  it('should create'
