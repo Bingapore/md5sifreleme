@@ -86,3 +86,45 @@ export class TraderChildBuyComponent implements OnInit {
       {
         this.buttonsFlag = true;
         this.errorMessageFromResponse = data.errorMessage;
+        this.errorFlag = true;
+      }
+      } ,
+      (err:any) => {
+          console.log(err);
+      });
+
+  }
+
+  rejectTrans()
+  {
+
+    let obs = this.http.post('http://localhost:8080/restproject/webapi/products/acceptRejectBuyTrans/',
+    {"transactionId":this.buyIdFromParent,
+      "clientId":this.clientId,
+      "transStatus":"reject",
+      "traderId":this.traderPrimaryKey,
+      "amountPaid":this.transVal
+    }
+    );
+
+
+    obs.subscribe((data:any) => {
+      console.log(data);
+      if(data.result == true)
+      {
+        this.buttonsFlag = false;
+      }
+      else if(data.result == false)
+      {
+        this.buttonsFlag = true;
+        this.errorMessageFromResponse = data.errorMessage;
+        this.errorFlag = true;
+      }
+      } ,
+      (err:any) => {
+          console.log(err);
+      });
+      
+  }
+
+}
