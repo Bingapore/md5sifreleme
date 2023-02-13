@@ -1,0 +1,48 @@
+
+import { Component,Input , OnInit } from '@angular/core';
+import { PrimaryKeyClassService } from '../primary-key-class.service';
+import { HttpClient } from '@angular/common/http';
+import { Router } from '@angular/router';
+
+@Component({
+  selector: 'app-trader-childs',
+  templateUrl: './trader-childs.component.html',
+  styleUrls: ['./trader-childs.component.css']
+})
+export class TraderChildsComponent implements OnInit {
+  @Input() parentTrader:number;
+
+  errorFlag:boolean = false;
+  buttonsFlag:boolean = true;
+  errorMessageFromResponse:string = "";
+
+  traderPrimaryKey:string="";
+
+  clientId:string = "";
+  transType:string = "";
+  transVal:number;
+  transCommission:number;
+  transCommissionType:string = "";
+  transStatus:string = "";
+  bitCoinValue:number;
+
+  constructor(private http: HttpClient , private router: Router , private primaryKeyService: PrimaryKeyClassService) { }
+
+  ngOnInit() {
+    this.traderPrimaryKey = this.primaryKeyService.getPrimaryKeyTrader();
+
+    this.getTheTransactionInfo();
+
+  }
+
+  getTheTransactionInfo()
+  {
+    let obs = this.http.get('http://localhost:8080/restproject/webapi/products/clientTransInfo/'+this.parentTrader);
+
+    obs.subscribe((data:any) =>
+    {
+
+      if(data.result == false)
+      {
+        //there is an error
+        this.errorFlag = true;
