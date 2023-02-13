@@ -12,4 +12,7 @@
   <button (click) = "acceptTrans()">Accept</button>
   <button (click) = "rejectTrans()">Reject</button>
   </p>
-  <p *ngI
+  <p *ngIf="errorFlag">{{errorMessageFromResponse}}</p>
+
+  <br/>
+</div>
