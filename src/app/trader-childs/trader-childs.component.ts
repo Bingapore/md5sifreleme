@@ -46,3 +46,76 @@ export class TraderChildsComponent implements OnInit {
       {
         //there is an error
         this.errorFlag = true;
+        this.errorMessageFromResponse = data.errorMessage;
+
+      }
+      else if(data.result == true)
+      {
+        //there is no error
+        this.errorFlag = false;
+        this.errorMessageFromResponse = "";
+
+        this.clientId = data.clientId;
+        this.transType = data.transType;
+        this.transVal = data.transVal ;
+        this.transCommission = data.transCommission;
+        this.transCommissionType = data.transCommissionType;
+        this.transStatus = data.transStatus;
+        this.bitCoinValue = data.bitCoinValue;
+      }
+
+    });
+  }
+
+  acceptTrans()
+  {
+    //accept the trans
+    //so no change in the the client account
+
+    //###but change the status of the transaction to accepted
+
+    let obs = this.http.post('http://localhost:8080/restproject/webapi/products/acceptRejectTrans/',
+    {"transactionId":this.parentTrader,
+      "clientId":this.clientId,
+      "transStatus":"accept",
+      "traderId":this.traderPrimaryKey
+    }
+    );
+
+
+    obs.subscribe((data:any) => {
+      console.log(data);
+      if(data.result == true)
+      {
+        this.buttonsFlag = false;
+      }
+      else if(data.result == false)
+      {
+        this.buttonsFlag = true;
+        this.errorMessageFromResponse = data.errorMessage;
+        this.errorFlag = true;
+      }
+      } ,
+      (err:any) => {
+          console.log(err);
+      });
+
+  }
+
+  rejectTrans()
+  {
+
+    let obs = this.http.post('http://localhost:8080/restproject/webapi/products/acceptRejectTrans/',
+    {"transactionId":this.parentTrader,
+      "clientId":this.clientId,
+      "transStatus":"reject",
+      "traderId":this.traderPrimaryKey
+    }
+    );
+
+
+    obs.subscribe((data:any) => {
+      console.log(data);
+      if(data.result == true)
+      {
+        this.buttonsFlag = false;
