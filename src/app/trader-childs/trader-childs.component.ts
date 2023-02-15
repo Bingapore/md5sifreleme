@@ -119,3 +119,20 @@ export class TraderChildsComponent implements OnInit {
       if(data.result == true)
       {
         this.buttonsFlag = false;
+      }
+      else if(data.result == false)
+      {
+        this.buttonsFlag = true;
+        this.errorMessageFromResponse = data.errorMessage;
+        this.errorFlag = true;
+      }
+      } ,
+      (err:any) => {
+          console.log(err);
+      });
+
+  }
+
+
+
+}
