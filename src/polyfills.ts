@@ -8,4 +8,4 @@
  *      file.
  *
  * The current setup is for so-called "evergreen" browsers; the last versions of browsers that
- * autom
+ * automatically update themselves. This includes Safari >= 10, Chrome >= 55 (including Opera)
