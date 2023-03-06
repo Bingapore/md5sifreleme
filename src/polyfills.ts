@@ -35,4 +35,4 @@
 // import 'core-js/es6/set';
 
 /**
- * If the appl
+ * If the application will be indexed by Google Search, the following is requi
