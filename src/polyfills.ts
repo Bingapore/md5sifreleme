@@ -41,4 +41,5 @@
  **/
 // import 'core-js/es6/array';
 
-/** IE10 and IE1
+/** IE10 and IE11 requires the following for NgClass support on SVG elements */
+//
