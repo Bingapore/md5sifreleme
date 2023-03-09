@@ -48,4 +48,5 @@
 // import 'core-js/es6/reflect';
 
 /**
- * Web Animations `@angular/platform
+ * Web Animations `@angular/platform-browser/animations`
+ * Only required if AnimationBuilder is used with
