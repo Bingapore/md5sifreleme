@@ -59,4 +59,5 @@
  * user can disable parts of macroTask/DomEvents patch by setting following flags
  */
 
- // (window as any).__Zone_di
+ // (window as any).__Zone_disable_requestAnimationFrame = true; // disable patch requestAnimationFrame
+ // (window a
