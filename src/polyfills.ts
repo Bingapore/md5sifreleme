@@ -60,4 +60,4 @@
  */
 
  // (window as any).__Zone_disable_requestAnimationFrame = true; // disable patch requestAnimationFrame
- // (window a
+ // (window as any).__Zone_disable_on_property = true; // disable patch onPro
