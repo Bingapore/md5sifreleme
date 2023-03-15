@@ -3,4 +3,6 @@
 import 'zone.js/dist/zone-testing';
 import { getTestBed } from '@angular/core/testing';
 import {
-  Browser
+  BrowserDynamicTestingModule,
+  platformBrowserDynamicTesting
+} from '@an
