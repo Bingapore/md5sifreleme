@@ -9,4 +9,5 @@ import {
 
 declare const require: any;
 
-// Fir
+// First, initialize the Angular testing environment.
+getTestBed().in
