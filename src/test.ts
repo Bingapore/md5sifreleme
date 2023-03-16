@@ -5,4 +5,8 @@ import { getTestBed } from '@angular/core/testing';
 import {
   BrowserDynamicTestingModule,
   platformBrowserDynamicTesting
-} from '@an
+} from '@angular/platform-browser-dynamic/testing';
+
+declare const require: any;
+
+// Fir
