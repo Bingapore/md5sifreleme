@@ -6,4 +6,9 @@
     "arrow-return-shorthand": true,
     "callable-types": true,
     "class-name": true,
-    "comme
+    "comment-format": [
+      true,
+      "check-space"
+    ],
+    "curly": true,
+    "deprecatio
