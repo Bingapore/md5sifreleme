@@ -20,4 +20,8 @@
       true,
       "rxjs/Rx"
     ],
-    
+    "import-spacing": true,
+    "indent": [
+      true,
+      "spaces"
+   
