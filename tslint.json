@@ -39,4 +39,10 @@
           "static-field",
           "instance-field",
           "static-method",
-          "instance-meth
+          "instance-method"
+        ]
+      }
+    ],
+    "no-arg": true,
+    "no-bitwise": true,
+   
