@@ -66,4 +66,6 @@
     "no-misused-new": true,
     "no-non-null-assertion": true,
     "no-redundant-jsdoc": true,
-    "no-shadowed-variable": 
+    "no-shadowed-variable": true,
+    "no-string-literal": false,
+    "no-string-throw": tru
