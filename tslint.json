@@ -68,4 +68,6 @@
     "no-redundant-jsdoc": true,
     "no-shadowed-variable": true,
     "no-string-literal": false,
-    "no-string-throw": tru
+    "no-string-throw": true,
+    "no-switch-case-fall-through": true,
+    "no-trailing-whitespac
