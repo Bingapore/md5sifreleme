@@ -79,4 +79,8 @@
     "one-line": [
       true,
       "check-open-brace",
-      "check
+      "check-catch",
+      "check-else",
+      "check-whitespace"
+    ],
+    "prefer-const"
