@@ -115,4 +115,7 @@
       "check-decl",
       "check-operator",
       "check-separator",
-      "check-t
+      "check-type"
+    ],
+    "no-output-on-prefix": true,
+    "use-input-property-decorator": t
