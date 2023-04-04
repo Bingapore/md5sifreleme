@@ -123,3 +123,5 @@
     "use-host-property-decorator": true,
     "no-input-rename": true,
     "no-output-rename": true,
+    "use-life-cycle-interface": true,
+    "use-pipe-transform-interface": tr
